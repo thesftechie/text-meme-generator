@@ -5,7 +5,7 @@
       <div class="input-group">
         <span class="input-group-text"
           ><img
-            :src="getImageUrl('/src/assets/search.svg')"
+            src="/src/assets/search.svg"
             :alt="`Search Magnifying Glass`"
             style="width: 1.5rem"
             @click="brandSearch()"

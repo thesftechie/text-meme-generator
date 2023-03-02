@@ -6,11 +6,11 @@
       anyways.
     </p>
     <div class="row gap-2 justify-content-center">
-      <div class="col col-4" v-for="paymentAccepted in paymentsAccepted">
+      <div class="col col-md-4" v-for="paymentAccepted in paymentsAccepted">
         <div class="card">
           <div class="card-header d-flex align-items-center">
             <img
-              :src="'/src/assets/bitcoin.svg'"
+              src="/src/assets/bitcoin.svg"
               :alt="`${paymentAccepted.title} logo`"
               style="max-height: 2rem"
             />

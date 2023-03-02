@@ -21,7 +21,7 @@
       <div v-if="isShowingAvatar" class="me-2">
         <!--border border-3 border-info rounded-circle ^-->
         <img
-          :src="getImageUrl('../../src/assets/example-avatar.png')"
+          src="../../src/assets/example-avatar.png"
           :alt="`Example Avatar`"
           class="rounded-circle"
           style="height: auto; width: 2.5rem"
