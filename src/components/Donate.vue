@@ -10,7 +10,7 @@
         <div class="card">
           <div class="card-header d-flex align-items-center">
             <img
-              :src="getImageUrl(paymentAccepted.logo)"
+              :src="'/src/assets/bitcoin.svg'"
               :alt="`${paymentAccepted.title} logo`"
               style="max-height: 2rem"
             />
@@ -42,7 +42,7 @@
                     tooltipMessage
                   }}</span>
                   <img
-                    :src="getImageUrl('/src/assets/clipboard.svg')"
+                    :src="'/src/assets/clipboard.svg'"
                     style="width: 1.5rem"
                     alt="Copy to clipboard"
                     @mouseenter="showTooltip()"
