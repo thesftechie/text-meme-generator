@@ -42,7 +42,7 @@
                     tooltipMessage
                   }}</span>
                   <img
-                    :src="'/src/assets/clipboard.svg'"
+                    src="/src/assets/clipboard.svg"
                     style="width: 1.5rem"
                     alt="Copy to clipboard"
                     @mouseenter="showTooltip()"
