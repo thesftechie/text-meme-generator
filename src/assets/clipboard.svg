@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Survey</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M20 14h-4v40h32V14h-4M24 24h16M24 34h16M24 44h16"
+  stroke-linejoin="round" stroke-linecap="round"></path>
+  <path data-name="layer1" d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+  fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+  <path data-name="layer1" d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z"
+  fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+  stroke-linecap="round"></path>
+</svg>

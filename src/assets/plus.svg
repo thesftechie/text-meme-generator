@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Add</title>
+  <desc>A flat styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  d="M32 54a2 2 0 0 1-2-2V10a2 2 0 0 1 4 0v42a2 2 0 0 1-2 2z" fill="#fff"></path>
+  <path data-name="layer1" d="M53 33H11a2 2 0 0 1 0-4h42a2 2 0 0 1 0 4z"
+  fill="#fff"></path>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Chats</title>
+  <desc>A color styled icon from Orion Icon Library.</desc>
+  <path data-name="layer1"
+  d="M4 50l15.4-6.3a29.6 29.6 0 0 0 6.6.7c13.3 0 24-8.6 24-19.2S39.3 6 26 6 2 14.6 2 25.2C2 30.6 4.8 35.5 9.3 39z"
+  fill="#a6dbff"></path>
+  <path data-name="opacity" d="M32 22.3c10.1 3.5 9.8-.6 8.7-3.3a15.3 15.3 0 0 0-2.4-3.4c-4.7-4.7-9.9-4.5-13.2-3S22 18.8 32 22.3z"
+  fill="#fff" opacity=".4"></path>
+  <path data-name="layer1" d="M62 41.6c0-6.2-5.2-11.5-12.4-13.1-1.8 8.4-10.5 15-21.3 15.8 1.6 6.2 8.4 10.9 16.7 10.9a21 21 0 0 0 4.7-.5L60 59l-3.1-7.7a12.4 12.4 0 0 0 5.1-9.7z"
+  fill="#a6dbff"></path>
+  <path data-name="opacity" d="M62 41.6c0-6.2-5.2-11.5-12.4-13.1-1.8 8.4-10.5 15-21.3 15.8 1.6 6.2 8.4 10.9 16.7 10.9a21 21 0 0 0 4.7-.5L60 59l-3.1-7.7a12.4 12.4 0 0 0 5.1-9.7z"
+  fill="#000064" opacity=".2"></path>
+  <path data-name="opacity" d="M29 39C15.2 39 4 30.3 4 19.5a15.4 15.4 0 0 1 .2-2.3 16 16 0 0 0-2.2 8C2 30.6 4.8 35.5 9.3 39L4 50l15.4-6.3a29.6 29.6 0 0 0 6.6.7c10.5 0 19.4-5.4 22.6-12.8C44.1 36.1 37 39 29 39z"
+  fill="#000064" opacity=".1"></path>
+  <path data-name="stroke" d="M49.6 28.5C56.8 30.1 62 35.4 62 41.6a12.4 12.4 0 0 1-5.1 9.7L60 59l-10.3-4.3a21 21 0 0 1-4.7.5c-8.2 0-15.1-4.7-16.7-10.9"
+  fill="none" stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10"
+  stroke-width="2" stroke-linejoin="round"></path>
+  <path data-name="stroke" d="M4 50l15.4-6.3a29.6 29.6 0 0 0 6.6.7c13.3 0 24-8.6 24-19.2S39.3 6 26 6 2 14.6 2 25.2C2 30.6 4.8 35.5 9.3 39z"
+  fill="none" stroke="#2e4369" stroke-linecap="round" stroke-miterlimit="10"
+  stroke-width="2" stroke-linejoin="round"></path>
+</svg>
