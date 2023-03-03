@@ -206,12 +206,21 @@ export default {
 
       el.addEventListener("change", function (ev2) {
         if (el.files.length) {
-          self.processorOptions.processing = true;
-          self.contactImg = URL.createObjectURL(el.files[0]);
-          self.showContactCss();
-          self.generatePreview("message-box", "preview-img");
-          self.processorOptions.processing = false;
-          self.showContact = true;
+          var f = el.files[0];
+          if (f) {
+            var r = new FileReader();
+            r.onload = function (e) {
+              self.contactImg = e.target.result;
+              self.showContactCss();
+              self.generatePreview("message-box", "preview-img");
+              self.showContact = true;
+            };
+            r.readAsDataURL(f);
+          } else {
+            alert("failed to load contact img");
+            self.contactImg = null;
+            self.showContact = false;
+          }
         }
       });
 
@@ -272,6 +281,7 @@ export default {
       var self = this;
       self.processorOptions.processing = true;
       var el = document.getElementById(idToGenerate);
+
       htmlToImage
         .toPng(el)
         .then(function (dataUrl) {
@@ -353,7 +363,7 @@ export default {
       if (!exists) {
         styleEl = document.createElement("style");
       }
-      styleEl.innerHTML = `.contact-img > div { background-image:url('${self.contactImg}'); background-size:contain; }`;
+      styleEl.innerHTML = `.contact-img > div { background-image:url('${self.contactImg}'); background-size: cover;background-repeat: no-repeat; background-position: center; }`;
       if (!exists) document.getElementById("messages").appendChild(styleEl);
     },
   },
