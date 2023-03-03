@@ -8,7 +8,7 @@
     </div>
     <p
       :class="`${
-        from === 'me' ? 'from-me ms-auto' : 'from-them'
+        from === 'me' ? 'from-me ms-auto pe-0' : 'from-them ps-0'
       } no-tail no-bubble`"
     >
       <img :src="imgAdded" alt="uploaded img" class="w-100" />
@@ -35,7 +35,7 @@
   >
     <div class="text-dark w-100 p-2">
       <div v-if="!showInput" class="d-flex">
-        <div class="me-auto">
+        <div class="me-auto d-none d-md-block">
           <button
             class="btn btn-success rounded-circle shadow"
             @click="addMessage('them')"
@@ -48,7 +48,12 @@
           </button>
           <span class="ms-2 fs-sm-6">From Them</span>
         </div>
-        <div class="ms-auto">
+        <div class="me-auto d-xs-block d-md-none">
+          <button class="btn btn-success shadow" @click="addMessage('them')">
+            &lt; From Them
+          </button>
+        </div>
+        <div class="ms-auto d-none d-md-block">
           <span class="me-2 fs-sm-6">From Me</span>
           <button
             class="btn btn-success rounded-circle shadow"
@@ -61,8 +66,13 @@
             />
           </button>
         </div>
+        <div class="ms-auto d-xs-block d-md-none">
+          <button class="btn btn-success shadow" @click="addMessage('me')">
+            From Me &gt;
+          </button>
+        </div>
       </div>
-      <div class="input-group" v-if="showInput && !messageSet">
+      <div class="input-group message-input" v-if="showInput && !messageSet">
         <input
           class="form-control"
           type="image"
@@ -72,39 +82,43 @@
           :placeholder="`from ${from}`"
           id="message-text"
         />
+        <div>
+          <button
+            class="btn btn-outline-secondary d-none d-md-inline border-0 border-top border-bottom rounded-0"
+            @click="showEmojiPicker()"
+          >
+            <img
+              src="../../src/assets/smile.svg"
+              alt="Add Emoji"
+              style="width: 1rem"
+            />
+          </button>
+          <button
+            class="btn btn-outline-secondary border-0 border-top border-bottom rounded-0"
+            @click="uploadFile()"
+          >
+            <img
+              src="../../src/assets/image.svg"
+              alt="Add Image"
+              style="width: 1rem"
+            />
+          </button>
 
-        <button
-          class="btn btn-outline-secondary d-none d-md-inline border-0 border-top border-bottom"
-          @click="showEmojiPicker()"
-        >
-          <img
-            src="../../src/assets/smile.svg"
-            alt="Add Emoji"
-            style="width: 1rem"
-          />
-        </button>
-        <button
-          class="btn btn-outline-secondary border-0 border-top border-bottom"
-          @click="uploadFile()"
-        >
-          <img
-            src="../../src/assets/image.svg"
-            alt="Add Image"
-            style="width: 1rem"
-          />
-        </button>
-
-        <button class="btn btn-success" @click="setMessage()">
-          <img
-            src="../../src/assets/plus.svg"
-            alt="Add Message"
-            style="width: 1rem"
-          />
-        </button>
-        <EmojiPicker
-          v-if="showEmojiSelector"
-          @emoji-selected="emojiSelected"
-        ></EmojiPicker>
+          <button
+            class="btn btn-success rounded-0 rounded-right"
+            @click="setMessage()"
+          >
+            <img
+              src="../../src/assets/plus.svg"
+              alt="Add Message"
+              style="width: 1rem"
+            />
+          </button>
+          <EmojiPicker
+            v-if="showEmojiSelector"
+            @emoji-selected="emojiSelected"
+          ></EmojiPicker>
+        </div>
       </div>
     </div>
     <div v-if="!messageSet">
@@ -202,9 +216,30 @@ export default {
 };
 </script>
 <style>
-@media (max-width: 576px) {
+@media (max-width: 850px) {
   .fs-sm-6 {
     font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .message-input {
+    display: block;
+  }
+  .message-input > input {
+    width: 100% !important;
+    border-radius: 0.5rem !important;
+  }
+  .message-input div {
+    width: 100% !important;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+  .message-input div button:nth-of-type(2),
+  .message-input div button:nth-of-type(1) {
+    border-left-style: solid !important;
+    border-left-width: 1px !important;
+    border-left-color: var(--bs-border-color) !important;
   }
 }
 </style>

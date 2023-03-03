@@ -12,14 +12,18 @@
                     <button
                       type="button"
                       @click="setDefaultBrand('apple')"
-                      :class="`btn btn${isApple ? '' : '-outline'}-secondary`"
+                      :class="`btn btn${
+                        isApple ? '' : '-outline'
+                      }-secondary w-50`"
                     >
                       iPhone
                     </button>
                     <button
                       type="button"
                       @click="setDefaultBrand('android')"
-                      :class="`btn btn${isApple ? '-outline' : ''}-secondary`"
+                      :class="`btn btn${
+                        isApple ? '-outline' : ''
+                      }-secondary w-50`"
                     >
                       Android
                     </button>
