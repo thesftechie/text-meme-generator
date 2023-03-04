@@ -114,12 +114,12 @@
               style="width: 1rem"
             />
           </button>
-          <EmojiPicker
-            v-if="showEmojiSelector"
-            @emoji-selected="emojiSelected"
-          ></EmojiPicker>
         </div>
       </div>
+      <EmojiPicker
+        v-if="showEmojiSelector"
+        @emoji-selected="emojiSelected"
+      ></EmojiPicker>
     </div>
     <div v-if="!messageSet">
       <button class="btn btn-danger rounded-circle" @click="removeMessage()">
