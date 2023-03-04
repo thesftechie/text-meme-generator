@@ -23,7 +23,13 @@ export const phoneSpecApi = {
       url: `https://phone-specs-api.azharimm.dev/top-by-fans`,
     });
   },
-  getTopByFans(axios) {
+  getTopAndroid(axios) {
+    return axios({
+      method: "get",
+      url: `https://phone-specs-api.azharimm.dev/top-by-interest`,
+    });
+  },
+  getTopApple(axios) {
     return axios({
       method: "get",
       url: `https://phone-specs-api.azharimm.dev/top-by-interest`,
