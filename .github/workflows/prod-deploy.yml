@@ -6,7 +6,7 @@ on:
   push:
     branches: ["main"]
   pull_request:
-    types: [opened, reopened, closed]
+    types: [opened, reopened]
     branches: ["main"]
 
 # Environment variables available to all jobs and steps in this workflow
@@ -23,9 +23,9 @@ jobs:
   build_and_deploy_job:
     permissions:
       contents: read # for actions/checkout to fetch code
-      # if pull request not closed, run. this will push to preview env.
-      # if closed and merged, run. this will push preview to prod
-    if: (github.event_name == 'pull_request' && github.event.action != 'closed') || (github.event.pull_request.merged && github.event.action == 'closed')
+      # if pull request not closed, run. this will push to preview.
+      # if pushed to main, run. this will push preview to prod
+    if: (github.event_name == 'pull_request' && github.event.action != 'closed') || (github.event_name == 'push') # || (github.event.pull_request.merged) # apparently will only trigger for the PR source, not target
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
