@@ -4,7 +4,7 @@ name: Deploy Web
 # When opening a PR to develop, run build
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
     branches: ["main"]
 
 # Environment variables available to all jobs and steps in this workflow
