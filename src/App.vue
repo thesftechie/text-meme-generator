@@ -19,7 +19,7 @@ import { RouterLink, RouterView } from "vue-router";
         </a>
 
         <button
-          class="navbar-toggler"
+          class="navbar-light navbar-toggler wtf-toggler-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -43,13 +43,16 @@ import { RouterLink, RouterView } from "vue-router";
             <li class="nav-item">
               <RouterLink class="nav-link" to="/shoutout">Shoutout</RouterLink>
             </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/about">About</RouterLink>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main class="pt-5" style="height: 90vh">
     <RouterView />
   </main>
   <footer></footer>
@@ -64,6 +67,12 @@ nav,
 
 .navbar-brand:hover {
   background-color: inherit;
+}
+.wtf-toggler-light {
+  border-color:rgba(255, 255, 255, 0.55)
+}
+.wtf-toggler-light > span {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 @media (min-width: 1024px) {
 }
