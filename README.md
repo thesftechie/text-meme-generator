@@ -4,11 +4,11 @@ This project is to allow users to build memes that are formatted like sms/txt me
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[VSCode](https://code.visualstudio.com/)
 
 ## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+See [Azure Static Web Apps - staticwebapp.config.json](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration).
 
 ## Project Setup
 
