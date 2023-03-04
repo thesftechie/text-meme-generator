@@ -63,7 +63,7 @@ export default {
   data() {
     return {
       paymentsAccepted: [],
-      walletAddress: import.meta.env.VITE_MY_WALLET,
+      walletAddress: import.meta.env.VITE_WALLET_ADDRESS,
       metaUrl: import.meta.url,
       showTip: false,
       tooltipMessage: "Copy to clipboard",
