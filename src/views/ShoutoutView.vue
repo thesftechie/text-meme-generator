@@ -1,16 +1,7 @@
 <template>
-  <div class="shoutout pt-3">
-    <Shoutouts></Shoutouts>
-  </div>
+  <Shoutouts></Shoutouts>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .shoutout {
-    display: flex;
-  }
-}
-</style>
 <script>
 import Shoutouts from "../components/Shoutouts.vue";
 

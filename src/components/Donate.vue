@@ -1,12 +1,17 @@
 <template>
-  <div style="max-width: 1068px" class="mx-auto">
-    <h1>Donate to Help Support Overhead</h1>
-    <p>
-      If you likey, help keep the lights on if you can. If you can't, enjoy
-      anyways.
-    </p>
+  <div
+    style="max-width: 1068px"
+    class="d-flex flex-column justify-content-center"
+  >
+    <div class="donate-description m-auto">
+      <h1>Donate to Help Support Overhead</h1>
+      <p class="mb-5">
+        If you likey, help keep the lights on if you can. If you can't, enjoy
+        anyways.
+      </p>
+    </div>
     <div class="row gap-2 justify-content-center">
-      <div class="col col-md-4" v-for="paymentAccepted in paymentsAccepted">
+      <div class="col col-md-6" v-for="paymentAccepted in paymentsAccepted">
         <div class="card">
           <div class="card-header d-flex align-items-center">
             <img
@@ -159,5 +164,14 @@ h3 {
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+}
+.donate-description {
+  max-width: 768px;
+}
+.donate-description p {
+  text-align: justify;
+}
+.donate-description {
+  text-align: center;
 }
 </style>
