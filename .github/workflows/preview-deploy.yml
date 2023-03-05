@@ -1,10 +1,10 @@
-name: Production Deployment
+name: Preview Deployment
 
 # When opening a PR to main, run deploy to azure
 # When opening a PR to develop, run build
 on:
   push:
-    branches: [main]
+    branches: [develop]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
@@ -21,12 +21,12 @@ jobs:
     permissions:
       contents: read # for actions/checkout to fetch code
     runs-on: ubuntu-latest
-    name: Production Deployment Job
+    name: Preview Deployment Job
     steps:
       - uses: actions/checkout@v3
         with:
           submodules: true
-      - name: Deploy Production Job
+      - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
