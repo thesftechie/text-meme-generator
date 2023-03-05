@@ -1,13 +1,13 @@
-name: develop Build
+name: main Build
 
 on:
   pull_request:
     types: [opened, reopened]
-    branches: [develop]
+    branches: [main]
 
 jobs:
   build:
-    name: develop Build Job
+    name: main Build Job
     runs-on: ubuntu-latest
 
     strategy:
