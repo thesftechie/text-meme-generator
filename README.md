@@ -4,14 +4,14 @@
 
 <h3 align="center">Production Status</h3>
 <p align="center">
-  <a href="https://github.com/thesftechie/text-meme-generator/actions/workflows/prod-deploy.yml"><img src="https://github.com/thesftechie/text-meme-generator/actions/workflows/prod-deploy.yml/badge.svg" alt="Production Deployment Status"></a>
-  <a href="https://github.com/thesftechie/text-meme-generator/actions/workflows/prod-build.yml"><img src="https://github.com/thesftechie/text-meme-generator/actions/workflows/prod-build.yml/badge.svg" alt="Main Build"></a>
+  <a href="https://github.com/thesftechie/text-meme-generator/actions/workflows/prod-deploy.yml"><img src="https://github.com/thesftechie/text-meme-generator/actions/workflows/prod-deploy.yml/badge.svg?kill_cache=1" alt="Production Deployment Status"></a>
+  <a href="https://github.com/thesftechie/text-meme-generator/actions/workflows/prod-build.yml"><img src="https://github.com/thesftechie/text-meme-generator/actions/workflows/prod-build.yml/badge.svg?kill_cache=1" alt="Main Build"></a>
 </p>
 
 <h3 align="center">Preview Status</h3>
 <p align="center">
-  <a href="https://github.com/thesftechie/text-meme-generator/actions/workflows/preview-deploy.yml"><img src="https://github.com/thesftechie/text-meme-generator/actions/workflows/preview-deploy.yml/badge.svg" alt="Preview Deployment Status"></a>
-  <a href="https://github.com/thesftechie/text-meme-generator/actions/workflows/develop-build.yml"><img src="https://github.com/thesftechie/text-meme-generator/actions/workflows/develop-build.yml/badge.svg" alt="Develop Build"></a>
+  <a href="https://github.com/thesftechie/text-meme-generator/actions/workflows/preview-deploy.yml"><img src="https://github.com/thesftechie/text-meme-generator/actions/workflows/preview-deploy.yml/badge.svg?kill_cache=1" alt="Preview Deployment Status"></a>
+  <a href="https://github.com/thesftechie/text-meme-generator/actions/workflows/develop-build.yml"><img src="https://github.com/thesftechie/text-meme-generator/actions/workflows/develop-build.yml/badge.svg?kill_cache=1" alt="Develop Build"></a>
 </p>
 
 This project is to allow users to build memes that are formatted like sms/txt messages using default Messages and iMessage layouts. https://textmemegenerator.com
